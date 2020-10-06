@@ -125,7 +125,7 @@ type relaxedBodyCanonicalizer struct {
 func (c *relaxedBodyCanonicalizer) Write(b []byte) (int, error) {
 	written := len(b)
 
-	b = fixCRLF(b)
+	//b = fixCRLF(b)
 
 	canonical := make([]byte, 0, len(b))
 	for _, ch := range b {
